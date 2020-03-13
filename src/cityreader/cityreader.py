@@ -93,6 +93,7 @@ def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
   # Go through each city and check to see if it falls within 
   # the specified coordinates.
 
+  # I decided to do the test for left/right/upper/lower in the function
   for i in cities:
     if (i.lat > min(lat1,lat2)) and (i.lat < max(lat1, lat2)):
         if min(lat1, lat2) == lat1:
